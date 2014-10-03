@@ -16,10 +16,10 @@ author = 'Tom Christie'
 author_email = 'tom@tomchristie.com'
 license = 'BSD'
 install_requires = [
-    'Jinja2==2.7.1',
-    'Markdown==2.3.1',
-    'PyYAML==3.10',
-    'watchdog==0.7.0',
+    'Jinja2==2.7.3',
+    'Markdown==2.5.1',
+    'PyYAML==3.11',
+    'watchdog==0.8.1',
     'ghp-import==0.4.1'
 ]
 
