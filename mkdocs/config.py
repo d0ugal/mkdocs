@@ -55,10 +55,6 @@ DEFAULT_CONFIG = {
     # PyMarkdown extension names.
     'markdown_extensions': (),
 
-    # Determine if the site should generate a json search index and include
-    # search elements in the theme. - TODO
-    'include_search': False,
-
     # Determine if the site should include a 404.html page.
     # TODO: Implment this. Make this None, have it True if a 404.html
     # template exists in the theme or docs dir.
@@ -68,6 +64,8 @@ DEFAULT_CONFIG = {
     # TODO: Implement this. Make this None, have it True if a sitemap.xml
     # template exists in the theme or docs dir.
     'include_sitemap': False,
+
+    'include_search': False,
 }
 
 
