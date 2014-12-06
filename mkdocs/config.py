@@ -64,8 +64,6 @@ DEFAULT_CONFIG = {
     # TODO: Implement this. Make this None, have it True if a sitemap.xml
     # template exists in the theme or docs dir.
     'include_sitemap': False,
-
-    'include_search': False,
 }
 
 
