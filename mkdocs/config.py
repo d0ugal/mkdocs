@@ -57,7 +57,7 @@ DEFAULT_CONFIG = {
 
     # Determine if the site should generate a json search index and include
     # search elements in the theme. - TODO
-    'include_search': False,
+    'include_search': True,
 
     # Determine if the site should include a 404.html page.
     # TODO: Implment this. Make this None, have it True if a 404.html
