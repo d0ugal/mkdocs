@@ -2,7 +2,7 @@
 from __future__ import print_function
 
 from jinja2.exceptions import TemplateNotFound
-from mkdocs import nav, toc, utils
+from mkdocs import nav, search, toc, utils
 from mkdocs.compat import urljoin, PY2
 from mkdocs.relative_path_ext import RelativePathExtension
 import jinja2
@@ -84,7 +84,6 @@ def get_global_context(nav, config):
 
         'include_nav': config['include_nav'],
         'include_next_prev': config['include_next_prev'],
-        'include_search': config['include_search'],
 
         'copyright': config['copyright'],
         'google_analytics': config['google_analytics']
@@ -129,21 +128,30 @@ def get_page_context(page, content, nav, toc, meta, config):
         'current_page': page,
         'previous_page': page.previous_page,
         'next_page': page.next_page,
+        'include_nav': config['include_nav'],
+        'include_next_prev': config['include_next_prev'],
     }
 
 
-def build_404(config, env, site_navigation):
+def build_template(template_name, env, config, site_navigation=None, extra_context=None):
 
     try:
-        template = env.get_template('404.html')
+        template = env.get_template(template_name)
     except TemplateNotFound:
-        return
+        return False
 
-    global_context = get_global_context(site_navigation, config)
+    if site_navigation is not None:
+        context = get_global_context(site_navigation, config)
+    else:
+        context = {}
 
-    output_content = template.render(global_context)
-    output_path = os.path.join(config['site_dir'], '404.html')
+    if extra_context is not None:
+        context.update(extra_context)
+
+    output_content = template.render(context)
+    output_path = os.path.join(config['site_dir'], template_name)
     utils.write_file(output_content.encode('utf-8'), output_path)
+    return True
 
 
 def build_pages(config, dump_json=False):
@@ -153,8 +161,10 @@ def build_pages(config, dump_json=False):
     site_navigation = nav.SiteNavigation(config['pages'], config['use_directory_urls'])
     loader = jinja2.FileSystemLoader(config['theme_dir'])
     env = jinja2.Environment(loader=loader)
+    search_index = search.SearchIndex()
 
-    build_404(config, env, site_navigation)
+    build_template('404.html', env, config, site_navigation)
+    build_template('search.html', env, config, site_navigation)
 
     for page in site_navigation.walk_pages():
         # Read the input file
@@ -196,6 +206,12 @@ def build_pages(config, dump_json=False):
             utils.write_file(json.dumps(json_context, indent=4).encode('utf-8'), output_path.replace('.html', '.json'))
         else:
             utils.write_file(output_content.encode('utf-8'), output_path)
+
+        search_index.add_entry_from_context(page, html_content, table_of_contents)
+
+    build_template('js/tipuesearch/tipuesearch_content.js', env, config, extra_context={
+        'search_index': search_index.generate_search_index()
+    })
 
 
 def build(config, live_server=False, dump_json=False, clean_site_dir=False):

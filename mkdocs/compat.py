@@ -1,40 +1,30 @@
 # coding: utf-8
+# flake8: noqa
 """Python 2/3 compatibility module."""
+
 import sys
 
-PY2 = int(sys.version[0]) == 2
+PY2 = sys.version_info < (3, )
 
 if PY2:
+    from HTMLParser import HTMLParser
     from urlparse import urljoin, urlparse, urlunparse
+    import SimpleHTTPServer as httpserver
+    import SocketServer as socketserver
     import urllib
+
     urlunquote = urllib.unquote
 
-    import SimpleHTTPServer as httpserver
-    httpserver = httpserver
-    import SocketServer
-    socketserver = SocketServer
-
-    import itertools
-    zip = itertools.izip
-
-    text_type = unicode
-    binary_type = str
-    string_types = (str, unicode)
+    from itertools import izip as zip
     unicode = unicode
-    basestring = basestring
-else:  # PY3
-    from urllib.parse import urljoin, urlparse, urlunparse, unquote
-    urlunquote = unquote
 
+else:  # PY3
+    from html.parser import HTMLParser
+    from urllib.parse import (urljoin, urlparse, urlunparse,
+                              unquote as urlunquote)
     import http.server as httpserver
-    httpserver = httpserver
     import socketserver
-    socketserver = socketserver
 
     zip = zip
 
-    text_type = str
-    binary_type = bytes
-    string_types = (str,)
     unicode = str
-    basestring = (str, bytes)
