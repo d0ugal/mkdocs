@@ -115,12 +115,15 @@ table,tr,td
     border-style:solid;
     border-color:#95a5a6;
 }
-
+td{
+padding: 8px;
+line-height: 1.42857143;
+}
 #main {
     margin-top:20px;
 }
 
-.footer{
+#footer.old{
   min-height: 50px;
   border-width:0px;
   border-top-width:1px;
@@ -128,6 +131,7 @@ table,tr,td
   border-color:#95a5a6;
   padding:10px;
 }
+
 blockquote {
 padding: 5px 10px;
 margin: 0 0 10px;
@@ -227,4 +231,8 @@ border-left: 2px solid #18bc9c;
 {
     border: 1px solid #ccc;
     background-color: #f3f3f3;
+}
+
+hr{
+  border-top: 1px solid #2c3e50;
 }

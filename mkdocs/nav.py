@@ -226,7 +226,8 @@ def _generate_site_navigation(pages_config, url_context, use_directory_urls=True
         if not child_title:
             # New top level page.
             page = Page(title=title, url=url, path=path, url_context=url_context)
-            nav_items.append(page)
+            if not utils.is_homepage(path):
+              nav_items.append(page)
         elif not nav_items or (nav_items[-1].title != title):
             # New second level page.
             page = Page(title=child_title, url=url, path=path, url_context=url_context)

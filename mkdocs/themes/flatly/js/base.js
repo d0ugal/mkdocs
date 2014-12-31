@@ -16,7 +16,7 @@ function getSearchTerm()
 
 $(document).ready(function() {
 
-    $('table').addclass('table table-striped table-hover');
+    $('table').addClass('table table-striped table-hover');
 
     // Tipue Search activation
     $('#tipue_search_input').tipuesearch({
@@ -31,9 +31,6 @@ $(document).ready(function() {
 
     // Highlight.js
     hljs.initHighlightingOnLoad();
-
-    // Bootstrap table formatting
-    $('table').addClass('table');
 
     // Scrollspy
     var navHeight = $('.navbar').outerHeight(true) + 10

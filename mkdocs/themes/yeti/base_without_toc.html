@@ -29,14 +29,10 @@
 
     <body{% if current_page and current_page.is_homepage %} class="homepage"{% endif %}>
 
-        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-        <script src="{{ base_url }}/js/bootstrap-3.0.3.min.js"></script>
-
         {% include "nav.html" %}
 
         <div class="container" id="main">
-            <div class="col-md-3">{% include "toc.html" %}</div>
-            <div class="col-md-9" role="main">{% include "content.html" %}</div>
+            <div class="col-md-12" role="main">{% include "content.html" %}</div>
         </div>
 
         <div><hr>
@@ -49,6 +45,8 @@
         </div>
         </div>
 
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="{{ base_url }}/js/bootstrap-3.0.3.min.js"></script>
         <script src="{{ base_url }}/js/prettify-1.0.min.js"></script>
         <script>var base_url = '{{ base_url }}';</script>
         <script src="{{ base_url }}/js/tipuesearch/tipuesearch_content.js"></script>

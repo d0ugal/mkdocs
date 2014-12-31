@@ -10,6 +10,13 @@ import json
 import markdown
 import os
 
+import commands
+
+def ListFilesByTxt(dir,wildcard):
+    cmd = "/usr/bin/find " + dir + " -follow -name \"" + "*" + wildcard + "\" "
+    outp = commands.getoutput(cmd)
+    return outp.split('\n')
+
 
 def convert_markdown(markdown_source, site_navigation=None, extensions=(), strict=False):
     """
@@ -166,7 +173,9 @@ def build_pages(config, dump_json=False):
     build_template('404.html', env, config, site_navigation)
     build_template('search.html', env, config, site_navigation)
 
+    nav_pages = []
     for page in site_navigation.walk_pages():
+        nav_pages.append(page.input_path)
         # Read the input file
         input_path = os.path.join(config['docs_dir'], page.input_path)
         input_content = open(input_path, 'r').read()
@@ -191,6 +200,9 @@ def build_pages(config, dump_json=False):
         else:
             template = env.get_template('base.html')
 
+        if not utils.is_markdown_file(page.input_path):
+            template = env.get_template('base_without_toc.html')
+
         # Render the template.
         output_content = template.render(context)
 
@@ -208,6 +220,49 @@ def build_pages(config, dump_json=False):
             utils.write_file(output_content.encode('utf-8'), output_path)
 
         search_index.add_entry_from_context(page, html_content, table_of_contents)
+
+    # generate html for other md files
+    files = ListFilesByTxt(os.path.join(config['docs_dir']),'.md')
+    for mdf in files:
+        title = os.path.basename(mdf)
+        title = os.path.splitext(title)[0]
+        path = os.path.relpath(mdf,config['docs_dir'])
+        url = utils.get_url_path(path,config['use_directory_urls'])
+        output_path = utils.get_html_path(path)
+        if(path in nav_pages):continue
+        input_content = open(mdf, 'r').read()
+        if PY2:
+            input_content = input_content.decode('utf-8')
+
+        site_navigation.url_context.set_current_url(url)
+        # Process the markdown text
+        html_content, table_of_contents, meta = convert_markdown(
+            input_content, site_navigation,
+            extensions=config['markdown_extensions']
+        )
+
+        context = get_global_context(site_navigation, config)
+        page = nav.Page(title=title, url=url,path=path,url_context=site_navigation.url_context)
+        context.update(get_page_context(
+                    page, html_content, site_navigation,
+                    table_of_contents, meta, config
+        ))
+
+        if 'template' in meta:
+            template = env.get_template(meta['template'][0])
+        else:
+            template = env.get_template('base.html')
+
+        if not utils.is_markdown_file(mdf):
+            template = env.get_template('base_without_toc.html')
+
+        # Render the template.
+        output_content = template.render(context)
+
+        # Write the output file.
+        output_path = os.path.join(config['site_dir'], output_path)
+        utils.write_file(output_content.encode('utf-8'), output_path)
+        #search_index.add_entry_from_context(page, html_content, table_of_contents)
 
     build_template('js/tipuesearch/tipuesearch_content.js', env, config, extra_context={
         'search_index': search_index.generate_search_index()
