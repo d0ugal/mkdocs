@@ -2,7 +2,7 @@ from __future__ import unicode_literals
 
 from mkdocs.compat import HTMLParser, unicode
 import json
-
+import re
 
 class SearchIndex(object):
     """
@@ -55,6 +55,9 @@ class SearchIndex(object):
         abs_url = page.abs_url
 
         # Create an entry for the full page.
+        content = re.sub('"',' ',content'"')
+        content = re.sub("\\\\",' ',content")
+        content = re.sub('\^',' ',content)
         self._add_entry(
             title=page.title,
             text=self.strip_tags(content).rstrip('\n'),
