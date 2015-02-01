@@ -13,6 +13,13 @@ import logging
 
 log = logging.getLogger('mkdocs')
 
+import commands
+
+def ListFilesByTxt(dir,wildcard):
+    cmd = "/usr/bin/find " + dir + " -follow -name \"" + "*" + wildcard + "\" "
+    outp = commands.getoutput(cmd)
+    return outp.split('\n')
+
 
 def convert_markdown(markdown_source, site_navigation=None, extensions=(), strict=False):
     """
@@ -87,7 +94,6 @@ def get_global_context(nav, config):
 
         'include_nav': config['include_nav'],
         'include_next_prev': config['include_next_prev'],
-        'include_search': config['include_search'],
 
         'copyright': config['copyright'],
         'google_analytics': config['google_analytics']
@@ -173,7 +179,9 @@ def build_pages(config, dump_json=False):
                       "search.html file. Assuming the theme implements search "
                       "within a modal.")
 
+    nav_pages = []
     for page in site_navigation.walk_pages():
+        nav_pages.append(page.input_path)
         # Read the input file
         input_path = os.path.join(config['docs_dir'], page.input_path)
         try:
@@ -200,6 +208,9 @@ def build_pages(config, dump_json=False):
             template = env.get_template(meta['template'][0])
         else:
             template = env.get_template('base.html')
+
+        if not utils.is_markdown_file(page.input_path):
+            template = env.get_template('base_without_toc.html')
 
         # Render the template.
         output_content = template.render(context)

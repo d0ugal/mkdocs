@@ -86,7 +86,7 @@ class URLContext(object):
     def set_current_url(self, current_url):
         self.base_path = posixpath.dirname(current_url)
 
-    def make_relative(self, url):
+    def make_relative(self, url, base_path=None):
         """
         Given a URL path return it as a relative URL,
         given the context of the current page.
@@ -94,12 +94,12 @@ class URLContext(object):
 
         suffix = '/' if (url.endswith('/') and len(url) > 1) else ''
         # Workaround for bug on `posixpath.relpath()` in Python 2.6
-        if self.base_path == '/':
+        if base_path == '/':
             if url == '/':
                 # Workaround for static assets
                 return '.'
             return url.lstrip('/')
-        relative_path = posixpath.relpath(url, start=self.base_path) + suffix
+        relative_path = posixpath.relpath(url, start=base_path) + suffix
 
         # Under Python 2.6, relative_path adds an extra '/' at the end.
         return relative_path.rstrip('/')
@@ -223,7 +223,8 @@ def _generate_site_navigation(pages_config, url_context, use_directory_urls=True
         if not child_title:
             # New top level page.
             page = Page(title=title, url=url, path=path, url_context=url_context)
-            nav_items.append(page)
+            if not utils.is_homepage(path):
+              nav_items.append(page)
         elif not nav_items or (nav_items[-1].title != title):
             # New second level page.
             page = Page(title=child_title, url=url, path=path, url_context=url_context)
