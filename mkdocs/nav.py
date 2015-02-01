@@ -92,9 +92,6 @@ class URLContext(object):
         given the context of the current page.
         """
 
-        if base_path is None:
-            base_path = self.base_path
-
         suffix = '/' if (url.endswith('/') and len(url) > 1) else ''
         # Workaround for bug on `posixpath.relpath()` in Python 2.6
         if base_path == '/':

@@ -9,6 +9,9 @@ import jinja2
 import json
 import markdown
 import os
+import logging
+
+log = logging.getLogger('mkdocs')
 
 import commands
 
@@ -104,9 +107,9 @@ def get_page_context(page, content, nav, toc, meta, config):
     """
 
     if page.is_homepage or page.title is None:
-        page_title = config['site_name']
+        page_title = None
     else:
-        page_title = page.title + ' - ' + config['site_name']
+        page_title = page.title
 
     if page.is_homepage:
         page_description = config['site_description']
@@ -134,9 +137,7 @@ def get_page_context(page, content, nav, toc, meta, config):
 
         'current_page': page,
         'previous_page': page.previous_page,
-        'next_page': page.next_page,
-        'include_nav': config['include_nav'],
-        'include_next_prev': config['include_next_prev'],
+        'next_page': page.next_page
     }
 
 
@@ -171,14 +172,22 @@ def build_pages(config, dump_json=False):
     search_index = search.SearchIndex()
 
     build_template('404.html', env, config, site_navigation)
-    build_template('search.html', env, config, site_navigation)
+
+    if config['include_search']:
+        if not build_template('search.html', env, config, site_navigation):
+            log.debug("Search is enabled but the theme doesn't contain a "
+                      "search.html file. Assuming the theme implements search "
+                      "within a modal.")
 
     nav_pages = []
     for page in site_navigation.walk_pages():
         nav_pages.append(page.input_path)
         # Read the input file
         input_path = os.path.join(config['docs_dir'], page.input_path)
-        input_content = open(input_path, 'r').read()
+        try:
+            input_content = open(input_path, 'r').read()
+        except IOError:
+            log.error('file not found: %s' % input_path)
         if PY2:
             input_content = input_content.decode('utf-8')
 
@@ -221,52 +230,14 @@ def build_pages(config, dump_json=False):
 
         search_index.add_entry_from_context(page, html_content, table_of_contents)
 
-    # generate html for other md files
-    files = ListFilesByTxt(os.path.join(config['docs_dir']),'.md')
-    for mdf in files:
-        title = os.path.basename(mdf)
-        title = os.path.splitext(title)[0]
-        path = os.path.relpath(mdf,config['docs_dir'])
-        url = utils.get_url_path(path,config['use_directory_urls'])
-        output_path = utils.get_html_path(path)
-        if(path in nav_pages):continue
-        input_content = open(mdf, 'r').read()
-        if PY2:
-            input_content = input_content.decode('utf-8')
+    if config['include_search']:
+        search_index = search_index.generate_search_index()
+        json_output_path = os.path.join(config['site_dir'], 'mkdocs', 'js', 'tipuesearch_content.json')
+        utils.write_file(search_index.encode('utf-8'), json_output_path)
 
-        site_navigation.url_context.set_current_url(url)
-        # Process the markdown text
-        html_content, table_of_contents, meta = convert_markdown(
-            input_content, site_navigation,
-            extensions=config['markdown_extensions']
-        )
-
-        context = get_global_context(site_navigation, config)
-        page = nav.Page(title=title, url=url,path=path,url_context=site_navigation.url_context)
-        context.update(get_page_context(
-                    page, html_content, site_navigation,
-                    table_of_contents, meta, config
-        ))
-
-        if 'template' in meta:
-            template = env.get_template(meta['template'][0])
-        else:
-            template = env.get_template('base.html')
-
-        if not utils.is_markdown_file(mdf):
-            template = env.get_template('base_without_toc.html')
-
-        # Render the template.
-        output_content = template.render(context)
-
-        # Write the output file.
-        output_path = os.path.join(config['site_dir'], output_path)
-        utils.write_file(output_content.encode('utf-8'), output_path)
-        #search_index.add_entry_from_context(page, html_content, table_of_contents)
-
-    build_template('js/tipuesearch/tipuesearch_content.js', env, config, extra_context={
-        'search_index': search_index.generate_search_index()
-    })
+        build_template('mkdocs/js/tipuesearch_content.js', env, config, extra_context={
+            'search_index': search_index
+        })
 
 
 def build(config, live_server=False, dump_json=False, clean_site_dir=False):

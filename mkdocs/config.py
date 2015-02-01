@@ -4,8 +4,11 @@ from mkdocs import utils
 from mkdocs.compat import urlparse
 from mkdocs.exceptions import ConfigurationError
 
+import logging
 import os
 import yaml
+
+log = logging.getLogger(__name__)
 
 DEFAULT_CONFIG = {
     'site_name': None,
@@ -60,14 +63,13 @@ DEFAULT_CONFIG = {
     # template exists in the theme or docs dir.
     'include_404': False,
 
-    # Determine if the site should include a sitemap.xml page.
-    # TODO: Implement this. Make this None, have it True if a sitemap.xml
-    # template exists in the theme or docs dir.
-    'include_sitemap': False,
-
     # enabling strict mode causes MkDocs to stop the build when a problem is
     # encountered rather than display an error.
     'strict': False,
+
+    # Enabling search will cause MkDocs to add Tipuesearch to the build
+    # directory.
+    'include_search': False,
 }
 
 
@@ -124,7 +126,13 @@ def validate_config(user_config):
         config['extra_javascript'] = extra_javascript
 
     package_dir = os.path.dirname(__file__)
-    theme_dir = [os.path.join(package_dir, 'themes', config['theme'])]
+    theme_dir = [os.path.join(package_dir, 'themes', config['theme']), ]
+
+    # If search is enabled, add the search assets to the theme_dir, this means
+    # that they will then we copied into the output directory but can be
+    # overwritten by themes if needed.
+    if config['include_search']:
+        theme_dir.append(os.path.join(package_dir, 'assets', 'search'))
 
     if config['theme_dir'] is not None:
         theme_dir.insert(0, config['theme_dir'])

@@ -10,7 +10,7 @@
         {% if favicon %}<link rel="shortcut icon" href="{{ favicon }}">
         {% else %}<link rel="shortcut icon" href="{{ base_url }}/img/favicon.ico">{% endif %}
 
-        <title>{{ page_title }}</title>
+	<title>{% if page_title %}{{ page_title }} - {% endif %}{{ site_name }}</title>
 
         <link href="{{ base_url }}/css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="{{ base_url }}/css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -39,16 +39,8 @@
             <div class="col-md-9" role="main">{% include "content.html" %}</div>
         </div>
 
-        <div><hr>
-        <div class="container" id="footer">
-        <div class="col-md-12">
-            {% if copyright %}
-                <p>{{ copyright }}</p>
-            {% endif %}
-        </div>
-        </div>
-        </div>
-
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="{{ base_url }}/js/bootstrap-3.0.3.min.js"></script>
         <script src="{{ base_url }}/js/prettify-1.0.min.js"></script>
         <script>var base_url = '{{ base_url }}';</script>
         <script src="{{ base_url }}/js/tipuesearch/tipuesearch_content.js"></script>

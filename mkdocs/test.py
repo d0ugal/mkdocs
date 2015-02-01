@@ -5,6 +5,7 @@
 from mkdocs import build, config, main, nav, search, toc, utils
 from mkdocs.compat import PY2, zip
 from mkdocs.exceptions import ConfigurationError, MarkdownNotFound
+import logging
 import markdown
 import mock
 import os
@@ -43,6 +44,16 @@ class MainTests(unittest.TestCase):
         arg, option = main.arg_to_option('--use_directory_urls')
         self.assertEqual('use_directory_urls', arg)
         self.assertEqual(True, option)
+
+    def test_configure_logging(self):
+        """
+        Check that logging is configured correctly
+        """
+        logger = logging.getLogger('mkdocs')
+        main.configure_logging({})
+        self.assertEqual(logging.WARNING, logger.level)
+        main.configure_logging({'verbose': True})
+        self.assertEqual(logging.DEBUG, logger.level)
 
 
 class ConfigTests(unittest.TestCase):
@@ -755,6 +766,7 @@ class BuildTests(unittest.TestCase):
         self.assertRaises(
             MarkdownNotFound,
             build.convert_markdown, invalid, site_nav, strict=True)
+
 
 class SearchTests(unittest.TestCase):
 
