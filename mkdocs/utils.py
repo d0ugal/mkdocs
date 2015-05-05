@@ -360,3 +360,18 @@ def nest_paths(paths):
         branch.append(path)
 
     return nested
+
+
+def split_path(path):
+
+    if '.' in path:
+        path, filename = os.path.split(path)
+
+    if path == "":
+        raise StopIteration
+
+    yield path
+
+    sub, part = os.path.split(path)
+    for sub in split_path(sub):
+        yield sub

@@ -149,7 +149,8 @@ def build_sitemap(config, env, site_navigation):
     utils.write_file(output_content.encode('utf-8'), output_path)
 
 
-def build_template(template_name, env, config, site_navigation=None):
+def build_template(template_name, env, config, site_navigation=None,
+                   extra_context=None, output_path=None):
 
     log.debug("Building template: %s", template_name)
 
@@ -163,8 +164,11 @@ def build_template(template_name, env, config, site_navigation=None):
     else:
         context = {}
 
+    context.update(extra_context or {})
+
     output_content = template.render(context)
-    output_path = os.path.join(config['site_dir'], template_name)
+    if output_path is None:
+        output_path = os.path.join(config['site_dir'], template_name)
     utils.write_file(output_content.encode('utf-8'), output_path)
     return True
 
@@ -248,6 +252,7 @@ def build_pages(config, dump_json=False):
     search_index = search.SearchIndex()
 
     build_template('404.html', env, config, site_navigation)
+    build_intermediate_pages(config, site_navigation, env)
 
     if not build_template('search.html', env, config, site_navigation):
         log.debug("Search is enabled but the theme doesn't contain a "
@@ -274,6 +279,20 @@ def build_pages(config, dump_json=False):
     search_index = search_index.generate_search_index()
     json_output_path = os.path.join(config['site_dir'], 'mkdocs', 'search_index.json')
     utils.write_file(search_index.encode('utf-8'), json_output_path)
+
+
+def build_intermediate_pages(config, site_navigation, env):
+
+    for directory, pages in site_navigation.get_directory_pages().items():
+
+        context = {
+            'content': '<br/>'.join(p.title for p in pages)
+        }
+
+        output = os.path.join(config['site_dir'], directory, 'index.html')
+
+        build_template('base.html', env, config, site_navigation,
+                       extra_context=context, output_path=output)
 
 
 def build(config, live_server=False, dump_json=False, clean_site_dir=False):

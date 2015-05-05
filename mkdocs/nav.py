@@ -6,6 +6,7 @@ Deals with generating the site-wide navigation.
 This consists of building a set of interlinked page and header objects.
 """
 
+from collections import defaultdict
 import datetime
 import logging
 import os
@@ -61,6 +62,16 @@ class SiteNavigation(object):
             self.file_context.set_current_path(page.input_path)
             yield page
         page.set_active(False)
+
+    def get_directory_pages(self):
+
+        directories = defaultdict(list)
+
+        for page in self.walk_pages():
+            for directory in utils.split_path(page.output_path):
+                directories[directory].append(page)
+
+        return directories
 
     @property
     def source_files(self):
