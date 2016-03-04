@@ -1,6 +1,6 @@
 require([
     base_url + '/mkdocs/js/mustache.min.js',
-    base_url + '/mkdocs/js/lunr-0.5.7.min.js',
+    base_url + '/mkdocs/js/lunr-0.6.0.min.js',
     'text!search-results-template.mustache',
     'text!../search_index.json',
 ], function (Mustache, lunr, results_template, data) {
@@ -29,17 +29,33 @@ require([
     data = JSON.parse(data);
     var documents = {};
 
+    var d = function(){
+        return new Date().getTime();
+    }
+
+    var before_load = d()
     for (var i=0; i < data.docs.length; i++){
         var doc = data.docs[i];
+
         doc.location = base_url + doc.location;
+        var before = d();
         index.add(doc);
+        var time = d() - before;
+        if (time > 50 ){
+            console.log(doc.location + " " + time);
+        }
         documents[doc.location] = doc;
     }
+    console.log("Index load: end " + (d() - before_load));
+    console.log("len " + data.docs.length);
 
     var search = function(){
 
         var query = document.getElementById('mkdocs-search-query').value;
         var search_results = document.getElementById("mkdocs-search-results");
+
+        search_results.innerHTML = "<p>Searching</p>";
+
         while (search_results.firstChild) {
             search_results.removeChild(search_results.firstChild);
         }
