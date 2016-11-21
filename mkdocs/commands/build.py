@@ -253,7 +253,7 @@ def build_pages(config, dump_json=False, dirty=False):
     """
     site_navigation = nav.SiteNavigation(config['pages'], config['use_directory_urls'])
     loader = jinja2.FileSystemLoader(config['theme_dir'] + [config['mkdocs_templates'], ])
-    env = jinja2.Environment(loader=loader)
+    env = jinja2.Environment(loader=loader, extensions=['jinja2.ext.with_'])
 
     # TODO: remove DeprecationContext in v1.0 when all deprecated vars have been removed
     from jinja2.runtime import Context

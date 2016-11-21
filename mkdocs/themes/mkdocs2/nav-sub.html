@@ -1,0 +1,18 @@
+{%- for nav_item in nav %}
+  {%- if not nav_item.children %}
+    <li class="pure-menu-item{% if nav_item.active %} pure-menu-selected{% endif %}">
+      <a href="{{ nav_item.url }}" class="pure-menu-link">{{ nav_item.title }}</a>
+    </li>
+  {%- else %}
+  <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover{% if nav_item.active %} pure-menu-selected{% endif %}">
+    <a href="{{ nav_item.url }}" class="pure-menu-link">{{ nav_item.title }}</a>
+    {%- if nav_item.children %}
+      <ul class="pure-menu-children">
+        {% with nav = nav_item.children %}
+          {% include "nav-sub.html" %}
+        {% endwith %}
+      </ul>
+    {%- endif %}
+  </li>
+  {%- endif %}
+{%- endfor %}

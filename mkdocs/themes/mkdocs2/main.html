@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+  {%- block side_meta %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% if page and page.is_homepage %}<meta name="description" content="{{ config.site_description }}">{% endif %}
+  {% if config.site_author %}<meta name="author" content="{{ config.site_author }}">{% endif %}
+  {% if page and page.canonical_url %}<link rel="canonical" href="{{ page.canonical_url }}">{% endif %}
+  {% if config.site_favicon %}<link rel="shortcut icon" href="{{ base_url }}/{{ config.site_favicon }}">
+  {% else %}<link rel="shortcut icon" href="{{ base_url }}/img/favicon.ico">{% endif %}
+  {%- endblock -%}
+
+  {%- block htmltitle %}
+    <title>{% if page and page.title and not page.is_homepage %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
+  {%- endblock %}
+
+  {%- block styles %}
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  <link rel="stylesheet" href="{{ base_url }}/css/base.css">
+  {%- endblock %}
+
+  <script src="https://use.fontawesome.com/d888ca3863.js"></script>
+</head>
+
+<body>
+
+  <div id="container">
+
+    {% include "nav.html" %}
+
+    <div id="banner" class="pure-g {% if page and page.is_homepage and config.extra.landing_page %}landing-page{% endif %}">
+      <div class="logo pure-u-6-24">
+        <img src="{{ base_url }}{{ config.extra.logo }}"/>
+      </div>
+      <div class="title pure-u-14-24">
+        {% if config.extra.title == "MkDocs" %}
+          <h1>Mk<span class="title-part-2">Docs</span></h1>
+        {% else %}
+          <h1>{{ config.extra.title }}</h1>
+        {% endif %}
+        <h2>{{ config.extra.subtitle }}</h1>
+      </div>
+    </div>
+
+    <div id="content">
+    {% if page and page.is_homepage and config.extra.landing_page %}
+      <div class="body">
+        <div class="body-inner">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+    {% else %}
+    <div id="content" class="pure-g">
+      <div class="toc pure-u-6-24">
+        <div class="toc-inner">
+          {% include "toc.html" %}
+        </div>
+      </div>
+      <div class="body pure-u-18-24">
+        <div class="body-inner">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+    {% endif %}
+
+  </div>
+
+{% if page and page.is_homepage %}
+<!--
+MkDocs version : {{ mkdocs_version }}
+Build Date UTC : {{ build_date_utc }}
+-->
+{% endif %}
+
+</body>
+</html>
