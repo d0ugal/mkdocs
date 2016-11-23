@@ -1,319 +1,163 @@
+@import url(http: //fonts.googleapis.com/css?family=Raleway|Source+Sans+Pro&amp;subset=latin-ext);
+
 body {
-    padding-top: 70px;
-    background: url(../img/grid.png) repeat-x;
-    background-attachment: fixed;
-    background-color: #f8f8f8;
+    font-size: 22px;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
-body > .container {
-    min-height: 400px;
-}
-
-ul.nav .main {
-    font-weight: bold;
-}
-
-.col-md-3 {
-    padding-left: 0;
-}
-
-.col-md-9 {
-    padding-bottom: 100px;
-}
-
-.source-links {
-    float: right;
-}
-
-.col-md-9 img {
-    max-width: 100%;
-    display: inline-block;
-    padding: 4px;
-    line-height: 1.428571429;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin: 20px auto 30px auto;
-}
-
-/*
- * The code below adds some padding to the top of the current anchor target so
- * that, when navigating to it, the header isn't hidden by the navbar at the
- * top. This is especially complicated because we want to *remove* the padding
- * after navigation so that hovering over the header shows the permalink icon
- * correctly. Thus, we create a CSS animation to remove the extra padding after
- * a second. We have two animations so that navigating to an anchor within the
- * page always restarts the animation.
- *
- * See <https://github.com/mkdocs/mkdocs/issues/843> for more details.
- */
-:target::before {
-    content: "";
-    display: block;
-    margin-top: -75px;
-    height: 75px;
-    pointer-events: none;
-    animation: 0s 1s forwards collapse-anchor-padding-1;
-}
-
-.clicky :target::before {
-  animation-name: collapse-anchor-padding-2;
-}
-
-@keyframes collapse-anchor-padding-1 {
-    to {
-        margin-top: 0;
-        height: 0;
-    }
-}
-
-@keyframes collapse-anchor-padding-2 {
-    to {
-        margin-top: 0;
-        height: 0;
-    }
+p {
+    font-size: 20px;
 }
 
 h1 {
-    color: #444;
-    font-weight: 400;
-    font-size: 42px;
+    font-size: 32px;
 }
 
-h2, h3, h4, h5, h6 {
-    color: #444;
-    font-weight: 300;
+h2 {
+    font-size: 22px;
 }
 
 hr {
-    border-top: 1px solid #aaa;
+    background-color: #d8d8d8;
+    height: 1px;
+    border: 0;
 }
 
-pre, .rst-content tt {
-    max-width: 100%;
-    background: #fff;
-    border: solid 1px #e1e4e5;
-    color: #333;
-    overflow-x: auto;
-}
-
-code.code-large, .rst-content tt.code-large {
-    font-size: 90%;
-}
-
-code {
-    padding: 2px 5px;
-    background: #fff;
-    border: solid 1px #e1e4e5;
-    color: #333;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-}
-
-pre code {
-    background: transparent;
-    border: none;
-    white-space: pre;
-    word-wrap: normal;
-    font-family: monospace,serif;
-    font-size: 12px;
-}
-
-a code {
-    color: #2FA4E7;
-}
-
-a:hover code, a:focus code {
-    color: #157AB5;
-}
-
-footer {
-    margin-top: 30px;
-    margin-bottom: 10px;
-    text-align: center;
-    font-weight: 200;
-}
-
-.modal-dialog {
-    margin-top: 60px;
+a {
+    color: #007cbc;
+    text-decoration: none;
 }
 
 /*
- * Side navigation
- *
- * Scrollspy and affixed enhanced navigation to highlight sections and secondary
- * sections of docs content.
+ * On the third level of navigation (i.e. two children deep). The menu should
+ * come out of the right side.
  */
-
-/* By default it's not affixed in mobile views, so undo that */
-.bs-sidebar.affix { /* csslint allow: adjoining-classes */
-    position: static;
+.pure-menu-horizontal .pure-menu-children .pure-menu-children {
+    left: 100%;
+    top: 0;
 }
 
-.bs-sidebar.well { /* csslint allow: adjoining-classes */
-    padding: 0;
-    max-height: 90%;
-    overflow-y: auto;
+.pure-menu {
+    background-color: #f0f0f0;
+    height: 72px;
+    border-bottom: 1px solid #0094e0;
 }
 
-/* First level of nav */
-.bs-sidenav {
-    padding-top:    10px;
-    padding-bottom: 10px;
-    border-radius: 5px;
+.pure-menu a {
+    color: #007cbc;
+    font-size: 18px;
+    line-height: 32px;
+    padding: 18px 0 18px 0;
+    margin: 0 24px 0 24px;
+    text-align: left;
 }
 
-/* All levels of nav */
-.bs-sidebar .nav > li > a {
-    display: block;
-    padding: 5px 20px;
-    z-index: 1;
-}
-.bs-sidebar .nav > li > a:hover,
-.bs-sidebar .nav > li > a:focus {
-    text-decoration: none;
-    border-right: 1px solid;
-}
-.bs-sidebar .nav > .active > a,
-.bs-sidebar .nav > .active:hover > a,
-.bs-sidebar .nav > .active:focus > a {
-    font-weight: bold;
-    background-color: transparent;
-    border-right: 1px solid;
+.pure-menu a:hover {
+    color: #df007a;
 }
 
-/* Nav: second level (shown on .active) */
-.bs-sidebar .nav .nav {
-    display: none; /* Hide by default, but at >768px, show it */
-    margin-bottom: 8px;
-}
-.bs-sidebar .nav .nav > li > a {
-    padding-top:    3px;
-    padding-bottom: 3px;
-    padding-left: 30px;
-    font-size: 90%;
+.pure-menu .top-level > li > ul {
+    border-top: 4px solid #df007a;
 }
 
-/* Show and affix the side nav when space allows it */
-@media (min-width: 992px) {
-    .bs-sidebar .nav > .active > ul {
-        display: block;
-    }
-    /* Widen the fixed sidebar */
-    .bs-sidebar.affix, /* csslint allow: adjoining-classes */
-    .bs-sidebar.affix-bottom { /* csslint allow: adjoining-classes */
-        width: 213px;
-    }
-    .bs-sidebar.affix { /* csslint allow: adjoining-classes */
-        position: fixed; /* Undo the static from mobile first approach */
-        top: 80px;
-    }
-    .bs-sidebar.affix-bottom { /* csslint allow: adjoining-classes */
-        position: absolute; /* Undo the static from mobile first approach */
-    }
-    .bs-sidebar.affix-bottom .bs-sidenav, /* csslint allow: adjoining-classes */
-    .bs-sidebar.affix .bs-sidenav { /* csslint allow: adjoining-classes */
-        margin-top: 0;
-        margin-bottom: 0;
-    }
+.pure-menu .pure-menu-children li a:hover{
+    background-color: #fff;
 }
-@media (min-width: 1200px) {
-    /* Widen the fixed sidebar again */
-    .bs-sidebar.affix-bottom, /* csslint allow: adjoining-classes */
-    .bs-sidebar.affix { /* csslint allow: adjoining-classes */
-        width: 263px;
-    }
+
+.pure-menu .pure-menu-selected a {
+    font-style: italic;
+    color: #1b1b1b;
+    border-bottom: 4px solid #0094e0;
 }
 
 .headerlink {
     font-family: FontAwesome;
     font-size: 14px;
-    display: none;
     padding-left: .5em;
+    text-decoration: none;
+    color: #d8d8d8;
 }
 
-h1:hover .headerlink, h2:hover .headerlink, h3:hover .headerlink, h4:hover .headerlink, h5:hover .headerlink, h6:hover .headerlink{
-    display:inline-block;
+.headerlink:hover {
+    color: #b8b8b8;
 }
 
-
-
-.admonition {
-    padding: 15px;
-    margin-bottom: 20px;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    text-align: left;
+#container {
+    margin: 0 auto;
+    max-width: 1280px;
 }
 
-.admonition.note { /* csslint allow: adjoining-classes */
-    color: #3a87ad;
-    background-color: #d9edf7;
-    border-color: #bce8f1;
+#banner {
+    background-color: #f0f0f0;
 }
 
-.admonition.warning { /* csslint allow: adjoining-classes */
-    color: #c09853;
-    background-color: #fcf8e3;
-    border-color: #fbeed5;
+#banner .logo img {
+    margin: 40px 40px 30px 73px;
 }
 
-.admonition.danger { /* csslint allow: adjoining-classes */
-    color: #b94a48;
-    background-color: #f2dede;
-    border-color: #eed3d7;
+#banner .title {
+    font-family: 'Raleway', sans-serif;
 }
 
-.admonition-title {
-    font-weight: bold;
-    text-align: left;
+#banner .title h1 {
+    margin: 50px 0 20px 0;
+    color: #0094e0;
+    font-size: 72px;
+    font-weight: normal;
 }
 
-
-.dropdown-submenu {
-    position: relative;
+#banner .title h2 {
+    font-size: 20px;
+    color: #1b1b1b;
+    font-weight: normal;
 }
 
-.dropdown-submenu>.dropdown-menu {
-    top: 0;
-    left: 100%;
-    margin-top: -6px;
-    margin-left: -1px;
-    -webkit-border-radius: 0 6px 6px 6px;
-    -moz-border-radius: 0 6px 6px;
-    border-radius: 0 6px 6px 6px;
+#banner.landing-page .title h1 {
+    font-size: 100px;
 }
 
-.dropdown-submenu:hover>.dropdown-menu {
-    display: block;
+#banner.landing-page .title h1 .title-part-2 {
+    color: #df007a;
 }
 
-.dropdown-submenu>a:after {
-    display: block;
-    content: " ";
-    float: right;
-    width: 0;
-    height: 0;
-    border-color: transparent;
-    border-style: solid;
-    border-width: 5px 0 5px 5px;
-    border-left-color: #ccc;
-    margin-top: 5px;
-    margin-right: -10px;
+#banner.landing-page .title h2 {
+    font-size: 72px;
+    margin-top: 0;
+    color: #0094e0;
+
 }
 
-.dropdown-submenu:hover>a:after {
-    border-left-color: #fff;
+#content {
+    margin-top: 30px;
+} 
+
+#content .toc-inner {
+    padding: 0px 59px 0px 51px;
+    margin-right: -1px;
+    border-right: 1px solid #d8d8d8;
 }
 
-.dropdown-submenu.pull-left { /* csslint allow: adjoining-classes */
-    float: none;
+#content .toc ul {
+    list-style: none;
 }
 
-.dropdown-submenu.pull-left>.dropdown-menu { /* csslint allow: adjoining-classes */
-    left: -100%;
-    margin-left: 10px;
-    -webkit-border-radius: 6px 0 6px 6px;
-    -moz-border-radius: 6px 0 6px 6px;
-    border-radius: 6px 0 6px 6px;
+#content .toc a {
+    font-size: 16px;
+    line-height: 32px;
+    text-decoration: none;
+    color: #007cbc;
 }
+
+#content .body-inner {
+    padding: 0px 59px;
+}
+
+#content .body h1, 
+#content .body h2, 
+#content .body h3, 
+#content .body h4, 
+#content .body h5, 
+#content .body h6 {
+    color: #cb2958;
+    font-weight: normal;
+} 
