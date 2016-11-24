@@ -56,7 +56,7 @@ a {
     color: #df007a;
 }
 
-.pure-menu .top-level > li > ul {
+.pure-menu .top-level > li ul {
     border-top: 4px solid #df007a;
 }
 

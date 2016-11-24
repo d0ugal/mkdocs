@@ -839,6 +839,166 @@
             "location": "/about/license/#mkdocs-license-bsd", 
             "text": "Copyright \u00a9 2014, Tom Christie. All rights reserved.  Redistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:  Redistributions of source code must retain the above copyright notice, this list\nof conditions and the following disclaimer. Redistributions in binary form must\nreproduce the above copyright notice, this list of conditions and the following\ndisclaimer in the documentation and/or other materials provided with the\ndistribution.  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR\nANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON\nANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.", 
             "title": "MkDocs License (BSD)"
+        }, 
+        {
+            "location": "/about/license/", 
+            "text": "License\n\uf0c1\n\n\nThe legal stuff.\n\n\n\n\nIncluded projects\n\uf0c1\n\n\nThemes used under license from the ReadTheDocs projects.\n\n\n\n\nReadTheDocs theme - \nView license\n.\n\n\n\n\nMany thanks to the authors and contributors of those wonderful projects.\n\n\nMkDocs License (BSD)\n\uf0c1\n\n\nCopyright \u00a9 2014, Tom Christie. All rights reserved.\n\n\nRedistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\n\nRedistributions of source code must retain the above copyright notice, this list\nof conditions and the following disclaimer. Redistributions in binary form must\nreproduce the above copyright notice, this list of conditions and the following\ndisclaimer in the documentation and/or other materials provided with the\ndistribution.\n\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR\nANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON\nANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.", 
+            "title": "test"
+        }, 
+        {
+            "location": "/about/license/#license", 
+            "text": "The legal stuff.", 
+            "title": "License"
+        }, 
+        {
+            "location": "/about/license/#included-projects", 
+            "text": "Themes used under license from the ReadTheDocs projects.   ReadTheDocs theme -  View license .   Many thanks to the authors and contributors of those wonderful projects.", 
+            "title": "Included projects"
+        }, 
+        {
+            "location": "/about/license/#mkdocs-license-bsd", 
+            "text": "Copyright \u00a9 2014, Tom Christie. All rights reserved.  Redistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:  Redistributions of source code must retain the above copyright notice, this list\nof conditions and the following disclaimer. Redistributions in binary form must\nreproduce the above copyright notice, this list of conditions and the following\ndisclaimer in the documentation and/or other materials provided with the\ndistribution.  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR\nANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON\nANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.", 
+            "title": "MkDocs License (BSD)"
+        }, 
+        {
+            "location": "/about/license/", 
+            "text": "License\n\uf0c1\n\n\nThe legal stuff.\n\n\n\n\nIncluded projects\n\uf0c1\n\n\nThemes used under license from the ReadTheDocs projects.\n\n\n\n\nReadTheDocs theme - \nView license\n.\n\n\n\n\nMany thanks to the authors and contributors of those wonderful projects.\n\n\nMkDocs License (BSD)\n\uf0c1\n\n\nCopyright \u00a9 2014, Tom Christie. All rights reserved.\n\n\nRedistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\n\nRedistributions of source code must retain the above copyright notice, this list\nof conditions and the following disclaimer. Redistributions in binary form must\nreproduce the above copyright notice, this list of conditions and the following\ndisclaimer in the documentation and/or other materials provided with the\ndistribution.\n\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR\nANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON\nANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.", 
+            "title": "test"
+        }, 
+        {
+            "location": "/about/license/#license", 
+            "text": "The legal stuff.", 
+            "title": "License"
+        }, 
+        {
+            "location": "/about/license/#included-projects", 
+            "text": "Themes used under license from the ReadTheDocs projects.   ReadTheDocs theme -  View license .   Many thanks to the authors and contributors of those wonderful projects.", 
+            "title": "Included projects"
+        }, 
+        {
+            "location": "/about/license/#mkdocs-license-bsd", 
+            "text": "Copyright \u00a9 2014, Tom Christie. All rights reserved.  Redistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:  Redistributions of source code must retain the above copyright notice, this list\nof conditions and the following disclaimer. Redistributions in binary form must\nreproduce the above copyright notice, this list of conditions and the following\ndisclaimer in the documentation and/or other materials provided with the\ndistribution.  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR\nANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON\nANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.", 
+            "title": "MkDocs License (BSD)"
+        }, 
+        {
+            "location": "/about/license/", 
+            "text": "License\n\uf0c1\n\n\nThe legal stuff.\n\n\n\n\nIncluded projects\n\uf0c1\n\n\nThemes used under license from the ReadTheDocs projects.\n\n\n\n\nReadTheDocs theme - \nView license\n.\n\n\n\n\nMany thanks to the authors and contributors of those wonderful projects.\n\n\nMkDocs License (BSD)\n\uf0c1\n\n\nCopyright \u00a9 2014, Tom Christie. All rights reserved.\n\n\nRedistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\n\nRedistributions of source code must retain the above copyright notice, this list\nof conditions and the following disclaimer. Redistributions in binary form must\nreproduce the above copyright notice, this list of conditions and the following\ndisclaimer in the documentation and/or other materials provided with the\ndistribution.\n\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR\nANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON\nANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.", 
+            "title": "test"
+        }, 
+        {
+            "location": "/about/license/#license", 
+            "text": "The legal stuff.", 
+            "title": "License"
+        }, 
+        {
+            "location": "/about/license/#included-projects", 
+            "text": "Themes used under license from the ReadTheDocs projects.   ReadTheDocs theme -  View license .   Many thanks to the authors and contributors of those wonderful projects.", 
+            "title": "Included projects"
+        }, 
+        {
+            "location": "/about/license/#mkdocs-license-bsd", 
+            "text": "Copyright \u00a9 2014, Tom Christie. All rights reserved.  Redistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:  Redistributions of source code must retain the above copyright notice, this list\nof conditions and the following disclaimer. Redistributions in binary form must\nreproduce the above copyright notice, this list of conditions and the following\ndisclaimer in the documentation and/or other materials provided with the\ndistribution.  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR\nANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON\nANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.", 
+            "title": "MkDocs License (BSD)"
+        }, 
+        {
+            "location": "/about/license/", 
+            "text": "License\n\uf0c1\n\n\nThe legal stuff.\n\n\n\n\nIncluded projects\n\uf0c1\n\n\nThemes used under license from the ReadTheDocs projects.\n\n\n\n\nReadTheDocs theme - \nView license\n.\n\n\n\n\nMany thanks to the authors and contributors of those wonderful projects.\n\n\nMkDocs License (BSD)\n\uf0c1\n\n\nCopyright \u00a9 2014, Tom Christie. All rights reserved.\n\n\nRedistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\n\nRedistributions of source code must retain the above copyright notice, this list\nof conditions and the following disclaimer. Redistributions in binary form must\nreproduce the above copyright notice, this list of conditions and the following\ndisclaimer in the documentation and/or other materials provided with the\ndistribution.\n\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR\nANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON\nANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.", 
+            "title": "test"
+        }, 
+        {
+            "location": "/about/license/#license", 
+            "text": "The legal stuff.", 
+            "title": "License"
+        }, 
+        {
+            "location": "/about/license/#included-projects", 
+            "text": "Themes used under license from the ReadTheDocs projects.   ReadTheDocs theme -  View license .   Many thanks to the authors and contributors of those wonderful projects.", 
+            "title": "Included projects"
+        }, 
+        {
+            "location": "/about/license/#mkdocs-license-bsd", 
+            "text": "Copyright \u00a9 2014, Tom Christie. All rights reserved.  Redistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:  Redistributions of source code must retain the above copyright notice, this list\nof conditions and the following disclaimer. Redistributions in binary form must\nreproduce the above copyright notice, this list of conditions and the following\ndisclaimer in the documentation and/or other materials provided with the\ndistribution.  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR\nANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON\nANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.", 
+            "title": "MkDocs License (BSD)"
+        }, 
+        {
+            "location": "/about/license/", 
+            "text": "License\n\uf0c1\n\n\nThe legal stuff.\n\n\n\n\nIncluded projects\n\uf0c1\n\n\nThemes used under license from the ReadTheDocs projects.\n\n\n\n\nReadTheDocs theme - \nView license\n.\n\n\n\n\nMany thanks to the authors and contributors of those wonderful projects.\n\n\nMkDocs License (BSD)\n\uf0c1\n\n\nCopyright \u00a9 2014, Tom Christie. All rights reserved.\n\n\nRedistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\n\nRedistributions of source code must retain the above copyright notice, this list\nof conditions and the following disclaimer. Redistributions in binary form must\nreproduce the above copyright notice, this list of conditions and the following\ndisclaimer in the documentation and/or other materials provided with the\ndistribution.\n\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR\nANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON\nANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.", 
+            "title": "test"
+        }, 
+        {
+            "location": "/about/license/#license", 
+            "text": "The legal stuff.", 
+            "title": "License"
+        }, 
+        {
+            "location": "/about/license/#included-projects", 
+            "text": "Themes used under license from the ReadTheDocs projects.   ReadTheDocs theme -  View license .   Many thanks to the authors and contributors of those wonderful projects.", 
+            "title": "Included projects"
+        }, 
+        {
+            "location": "/about/license/#mkdocs-license-bsd", 
+            "text": "Copyright \u00a9 2014, Tom Christie. All rights reserved.  Redistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:  Redistributions of source code must retain the above copyright notice, this list\nof conditions and the following disclaimer. Redistributions in binary form must\nreproduce the above copyright notice, this list of conditions and the following\ndisclaimer in the documentation and/or other materials provided with the\ndistribution.  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR\nANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON\nANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.", 
+            "title": "MkDocs License (BSD)"
+        }, 
+        {
+            "location": "/about/license/", 
+            "text": "License\n\uf0c1\n\n\nThe legal stuff.\n\n\n\n\nIncluded projects\n\uf0c1\n\n\nThemes used under license from the ReadTheDocs projects.\n\n\n\n\nReadTheDocs theme - \nView license\n.\n\n\n\n\nMany thanks to the authors and contributors of those wonderful projects.\n\n\nMkDocs License (BSD)\n\uf0c1\n\n\nCopyright \u00a9 2014, Tom Christie. All rights reserved.\n\n\nRedistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\n\nRedistributions of source code must retain the above copyright notice, this list\nof conditions and the following disclaimer. Redistributions in binary form must\nreproduce the above copyright notice, this list of conditions and the following\ndisclaimer in the documentation and/or other materials provided with the\ndistribution.\n\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR\nANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON\nANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.", 
+            "title": "test"
+        }, 
+        {
+            "location": "/about/license/#license", 
+            "text": "The legal stuff.", 
+            "title": "License"
+        }, 
+        {
+            "location": "/about/license/#included-projects", 
+            "text": "Themes used under license from the ReadTheDocs projects.   ReadTheDocs theme -  View license .   Many thanks to the authors and contributors of those wonderful projects.", 
+            "title": "Included projects"
+        }, 
+        {
+            "location": "/about/license/#mkdocs-license-bsd", 
+            "text": "Copyright \u00a9 2014, Tom Christie. All rights reserved.  Redistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:  Redistributions of source code must retain the above copyright notice, this list\nof conditions and the following disclaimer. Redistributions in binary form must\nreproduce the above copyright notice, this list of conditions and the following\ndisclaimer in the documentation and/or other materials provided with the\ndistribution.  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR\nANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON\nANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.", 
+            "title": "MkDocs License (BSD)"
+        }, 
+        {
+            "location": "/about/license/", 
+            "text": "License\n\uf0c1\n\n\nThe legal stuff.\n\n\n\n\nIncluded projects\n\uf0c1\n\n\nThemes used under license from the ReadTheDocs projects.\n\n\n\n\nReadTheDocs theme - \nView license\n.\n\n\n\n\nMany thanks to the authors and contributors of those wonderful projects.\n\n\nMkDocs License (BSD)\n\uf0c1\n\n\nCopyright \u00a9 2014, Tom Christie. All rights reserved.\n\n\nRedistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\n\nRedistributions of source code must retain the above copyright notice, this list\nof conditions and the following disclaimer. Redistributions in binary form must\nreproduce the above copyright notice, this list of conditions and the following\ndisclaimer in the documentation and/or other materials provided with the\ndistribution.\n\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR\nANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON\nANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.", 
+            "title": "test"
+        }, 
+        {
+            "location": "/about/license/#license", 
+            "text": "The legal stuff.", 
+            "title": "License"
+        }, 
+        {
+            "location": "/about/license/#included-projects", 
+            "text": "Themes used under license from the ReadTheDocs projects.   ReadTheDocs theme -  View license .   Many thanks to the authors and contributors of those wonderful projects.", 
+            "title": "Included projects"
+        }, 
+        {
+            "location": "/about/license/#mkdocs-license-bsd", 
+            "text": "Copyright \u00a9 2014, Tom Christie. All rights reserved.  Redistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:  Redistributions of source code must retain the above copyright notice, this list\nof conditions and the following disclaimer. Redistributions in binary form must\nreproduce the above copyright notice, this list of conditions and the following\ndisclaimer in the documentation and/or other materials provided with the\ndistribution.  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR\nANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON\nANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.", 
+            "title": "MkDocs License (BSD)"
+        }, 
+        {
+            "location": "/about/license/", 
+            "text": "License\n\uf0c1\n\n\nThe legal stuff.\n\n\n\n\nIncluded projects\n\uf0c1\n\n\nThemes used under license from the ReadTheDocs projects.\n\n\n\n\nReadTheDocs theme - \nView license\n.\n\n\n\n\nMany thanks to the authors and contributors of those wonderful projects.\n\n\nMkDocs License (BSD)\n\uf0c1\n\n\nCopyright \u00a9 2014, Tom Christie. All rights reserved.\n\n\nRedistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\n\nRedistributions of source code must retain the above copyright notice, this list\nof conditions and the following disclaimer. Redistributions in binary form must\nreproduce the above copyright notice, this list of conditions and the following\ndisclaimer in the documentation and/or other materials provided with the\ndistribution.\n\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR\nANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON\nANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.", 
+            "title": "test"
+        }, 
+        {
+            "location": "/about/license/#license", 
+            "text": "The legal stuff.", 
+            "title": "License"
+        }, 
+        {
+            "location": "/about/license/#included-projects", 
+            "text": "Themes used under license from the ReadTheDocs projects.   ReadTheDocs theme -  View license .   Many thanks to the authors and contributors of those wonderful projects.", 
+            "title": "Included projects"
+        }, 
+        {
+            "location": "/about/license/#mkdocs-license-bsd", 
+            "text": "Copyright \u00a9 2014, Tom Christie. All rights reserved.  Redistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:  Redistributions of source code must retain the above copyright notice, this list\nof conditions and the following disclaimer. Redistributions in binary form must\nreproduce the above copyright notice, this list of conditions and the following\ndisclaimer in the documentation and/or other materials provided with the\ndistribution.  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR\nANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON\nANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.", 
+            "title": "MkDocs License (BSD)"
         }
     ]
 }
