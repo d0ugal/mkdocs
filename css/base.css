@@ -43,7 +43,7 @@ a {
     border-bottom: 1px solid #0094e0;
 }
 
-.pure-menu a {
+.pure-menu a, .pure-menu-selected .pure-menu-link, .pure-menu-selected .pure-menu-link:visited {
     color: #007cbc;
     font-size: 18px;
     line-height: 32px;
@@ -64,10 +64,16 @@ a {
     background-color: #fff;
 }
 
-.pure-menu .pure-menu-selected a {
+.pure-menu .top-level > .pure-menu-selected > a {
     font-style: italic;
     color: #1b1b1b;
     border-bottom: 4px solid #0094e0;
+}
+
+.pure-menu ul ul .pure-menu-selected > .pure-menu-link,
+.pure-menu ul ul .pure-menu-selected > .pure-menu-link:visited {
+    font-style: italic;
+    color: #1b1b1b;
 }
 
 .headerlink {

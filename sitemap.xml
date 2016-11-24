@@ -60,18 +60,6 @@
     </url>
         
     <url>
-     <loc>http://www.mkdocs.org/about/contributing/</loc>
-     <lastmod>2016-11-24</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>http://www.mkdocs.org/about/license/</loc>
-     <lastmod>2016-11-24</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
      <loc>http://www.mkdocs.org</loc>
      <lastmod></lastmod>
      <changefreq>daily</changefreq>
