@@ -28,6 +28,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: #1b1b1b;
+}
+
 /*
  * On the third level of navigation (i.e. two children deep). The menu should
  * come out of the right side.
@@ -43,10 +47,12 @@ a {
     border-bottom: 1px solid #0094e0;
 }
 
-.pure-menu a, .pure-menu-selected .pure-menu-link, .pure-menu-selected .pure-menu-link:visited {
+.pure-menu a,
+.pure-menu-selected .pure-menu-link,
+.pure-menu-selected .pure-menu-link:visited {
     color: #007cbc;
     font-size: 18px;
-    line-height: 32px;
+    height: 32px;
     padding: 18px 0 18px 0;
     margin: 0 24px 0 24px;
     text-align: left;
@@ -58,9 +64,15 @@ a {
 
 .pure-menu .top-level > li ul {
     border-top: 4px solid #df007a;
+    margin-top: -2px;
+}
+
+.pure-menu .top-level > li.pure-menu-selected ul {
+    margin-top: -4px;
 }
 
 .pure-menu .pure-menu-children li a:hover{
+    color: #df007a;
     background-color: #fff;
 }
 
@@ -138,7 +150,6 @@ a {
 } 
 
 #content .toc-inner {
-    padding: 0px 59px 0px 51px;
     margin-right: -1px;
     border-right: 1px solid #d8d8d8;
 }
@@ -149,9 +160,7 @@ a {
 
 #content .toc a {
     font-size: 16px;
-    line-height: 32px;
-    text-decoration: none;
-    color: #007cbc;
+    line-height: 38px;
 }
 
 #content .body-inner {
