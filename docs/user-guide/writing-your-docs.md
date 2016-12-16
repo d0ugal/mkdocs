@@ -17,7 +17,7 @@ configuration if you would like your pages sorted differantly.
 
 A simple pages configuration looks like this:
 
-```no-highlight
+```yaml
 pages:
 - 'index.md'
 - 'about.md'
@@ -40,7 +40,7 @@ pages:
 Subsections can be created by listing related pages together under a section
 title. For example:
 
-```no-highlight
+```yaml
 pages:
 - Home: 'index.md'
 - User Guide:
@@ -49,6 +49,10 @@ pages:
 - About:
     - 'License': 'about/license.md'
     - 'Release Notes': 'about/release-notes.md'
+```
+
+```python
+print("Hello World")
 ```
 
 With the above configuration we have three top level sections: Home, User Guide

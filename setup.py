@@ -71,7 +71,7 @@ setup(
         ],
         'mkdocs.themes': [
             'mkdocs = mkdocs.themes.mkdocs',
-            'mkdocs2 = mkdocs.themes.mkdocs2',
+            'tattie = mkdocs.themes.tattie',
             'readthedocs = mkdocs.themes.readthedocs',
         ]
     },

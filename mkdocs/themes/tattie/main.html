@@ -43,11 +43,11 @@
       </div>
     </div>
 
-    <div id="content">
     {% if page and page.is_homepage and config.extra.landing_page %}
+    <div id="content" class="landind">
       <div class="body">
         <div class="body-inner">
-          {{ content }}
+          {{ page.content }}
         </div>
       </div>
     </div>

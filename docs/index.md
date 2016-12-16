@@ -1,11 +1,13 @@
 <div class="pure-g">
   <div class="pure-u-20-24">
-
-MkDocs is a fast, simple and downright gorgeous static site generator that's
-geared towards building project documentation. Documentation source files are
-written in Markdown, and configured with a single YAML configuration file.
-
+    <p>
+      MkDocs is a fast, simple and downright gorgeous static site generator that's
+      geared towards building project documentation. Documentation source files are
+      written in Markdown, and configured with a single YAML configuration file.
+    </p>
   </div>
+
+  <hr/>
 
   <div class="pure-u-12-24">
 
